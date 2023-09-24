@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Teacher-tool Dashboard{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Teacher-tool</h1>
+    </div>
+    <div class="menu-bar">
+        <a href="/">Home</a>
+        <a href="/pdf">PDF</a>
+        <a href="/codehs">CodeHS</a>
+        <a href="/prjstem">Project Stem</a>
+        <a href="/misc">Other Reports</a>
+        
+    </div>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

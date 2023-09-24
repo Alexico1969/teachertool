@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to the Code HS page</h1>
+    <br>
+    <div class="main">
+        <div class="column">
+            <!-- Content for the first column -->
+            <h2>Fetch data [form]</h2>
+            <form method="POST" action="">
+                <label for="student_number">Student Number:</label>
+                <input type="text" id="student_number" name="student_number" required>
+                <br><br>
+                <label for="exercise_number">Exercise Number:</label>
+                <input type="text" id="exercise_number" name="exercise_number" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="column">
+            <!-- Content for the second column -->
+            <h2>Result</h2>
+            <img src="static/scrn/screenshot.png">
+        </div>
+    </div>
+   
+{% endblock %}
